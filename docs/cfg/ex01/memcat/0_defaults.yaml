@@ -1,0 +1,12 @@
+%YAML 1.2
+# -*- coding: 'UTF-8, tab-width: 2 -*-'
+---
+
+'': # Empty key = defaults for the entire category.
+
+  queryDefaults:
+    n:  10
+
+
+
+...
