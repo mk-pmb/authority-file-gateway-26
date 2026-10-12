@@ -1,0 +1,200 @@
+%YAML 1.2
+# -*- coding: 'UTF-8, tab-width: 2 -*-'
+---
+
+# First list item is file metadata:
+- subject:
+    dc:title: 'Ubuntu versions table'
+  keywordFields:
+    - 'dc:title'
+    - 'dc:description'
+
+# Then, actual catalog entries:
+
+- dc:title: 'Warty Warthog'
+  dc:description: 'Ubuntu 4.10'
+  dc:identifier: https://wiki.ubuntuusers.de/Warty_Warthog/
+
+- dc:title: 'Hoary Hedgehog'
+  dc:description: 'Ubuntu 5.04'
+  dc:identifier: https://wiki.ubuntuusers.de/Hoary_Hedgehog/
+
+- dc:title: 'Breezy Badger'
+  dc:description: 'Ubuntu 5.10'
+  dc:identifier: https://wiki.ubuntuusers.de/Breezy_Badger/
+
+- dc:title: 'Dapper Drake'
+  dc:description: 'Ubuntu 6.06 LTS'
+  dc:identifier: https://wiki.ubuntuusers.de/Dapper_Drake/
+
+- dc:title: 'Edgy Eft'
+  dc:description: 'Ubuntu 6.10'
+  dc:identifier: https://wiki.ubuntuusers.de/Edgy_Eft/
+
+- dc:title: 'Feisty Fawn'
+  dc:description: 'Ubuntu 7.04'
+  dc:identifier: https://wiki.ubuntuusers.de/Feisty_Fawn/
+
+- dc:title: 'Gutsy Gibbon'
+  dc:description: 'Ubuntu 7.10'
+  dc:identifier: https://wiki.ubuntuusers.de/Gutsy_Gibbon/
+
+- dc:title: 'Hardy Heron'
+  dc:description: 'Ubuntu 8.04 LTS'
+  dc:identifier: https://wiki.ubuntuusers.de/Hardy_Heron/
+
+- dc:title: 'Intrepid Ibex'
+  dc:description: 'Ubuntu 8.10'
+  dc:identifier: https://wiki.ubuntuusers.de/Intrepid_Ibex/
+
+- dc:title: 'Jaunty Jackalope'
+  dc:description: 'Ubuntu 9.04'
+  dc:identifier: https://wiki.ubuntuusers.de/Jaunty_Jackalope/
+
+- dc:title: 'Karmic Koala'
+  dc:description: 'Ubuntu 9.10'
+  dc:identifier: https://wiki.ubuntuusers.de/Karmic_Koala/
+
+- dc:title: 'Lucid Lynx'
+  dc:description: 'Ubuntu 10.04 LTS'
+  dc:identifier: https://wiki.ubuntuusers.de/Lucid_Lynx/
+
+- dc:title: 'Maverick Meerkat'
+  dc:description: 'Ubuntu 10.10'
+  dc:identifier: https://wiki.ubuntuusers.de/Maverick_Meerkat/
+
+- dc:title: 'Natty Narwhal'
+  dc:description: 'Ubuntu 11.04'
+  dc:identifier: https://wiki.ubuntuusers.de/Natty_Narwhal/
+
+- dc:title: 'Oneiric Ocelot'
+  dc:description: 'Ubuntu 11.10'
+  dc:identifier: https://wiki.ubuntuusers.de/Oneiric_Ocelot/
+
+- dc:title: 'Precise Pangolin'
+  dc:description: 'Ubuntu 12.04 LTS'
+  dc:identifier: https://wiki.ubuntuusers.de/Precise_Pangolin/
+
+- dc:title: 'Quantal Quetzal'
+  dc:description: 'Ubuntu 12.10'
+  dc:identifier: https://wiki.ubuntuusers.de/Quantal_Quetzal/
+
+- dc:title: 'Raring Ringtail'
+  dc:description: 'Ubuntu 13.04'
+  dc:identifier: https://wiki.ubuntuusers.de/Raring_Ringtail/
+
+- dc:title: 'Saucy Salamander'
+  dc:description: 'Ubuntu 13.10'
+  dc:identifier: https://wiki.ubuntuusers.de/Saucy_Salamander/
+
+- dc:title: 'Trusty Tahr'
+  dc:description: 'Ubuntu 14.04 LTS'
+  dc:identifier: https://wiki.ubuntuusers.de/Trusty_Tahr/
+
+- dc:title: 'Utopic Unicorn'
+  dc:description: 'Ubuntu 14.10'
+  dc:identifier: https://wiki.ubuntuusers.de/Utopic_Unicorn/
+
+- dc:title: 'Vivid Vervet'
+  dc:description: 'Ubuntu 15.04'
+  dc:identifier: https://wiki.ubuntuusers.de/Vivid_Vervet/
+
+- dc:title: 'Wily Werewolf'
+  dc:description: 'Ubuntu 15.10'
+  dc:identifier: https://wiki.ubuntuusers.de/Wily_Werewolf/
+
+- dc:title: 'Xenial Xerus'
+  dc:description: 'Ubuntu 16.04 LTS'
+  dc:identifier: https://wiki.ubuntuusers.de/Xenial_Xerus/
+
+- dc:title: 'Yakkety Yak'
+  dc:description: 'Ubuntu 16.10'
+  dc:identifier: https://wiki.ubuntuusers.de/Yakkety_Yak/
+
+- dc:title: 'Zesty Zapus'
+  dc:description: 'Ubuntu 17.04'
+  dc:identifier: https://wiki.ubuntuusers.de/Zesty_Zapus/
+
+- dc:title: 'Artful Aardvark'
+  dc:description: 'Ubuntu 17.10'
+  dc:identifier: https://wiki.ubuntuusers.de/Artful_Aardvark/
+
+- dc:title: 'Bionic Beaver'
+  dc:description: 'Ubuntu 18.04 LTS'
+  dc:identifier: https://wiki.ubuntuusers.de/Bionic_Beaver/
+
+- dc:title: 'Cosmic Cuttlefish'
+  dc:description: 'Ubuntu 18.10'
+  dc:identifier: https://wiki.ubuntuusers.de/Cosmic_Cuttlefish/
+
+- dc:title: 'Disco Dingo'
+  dc:description: 'Ubuntu 19.04'
+  dc:identifier: https://wiki.ubuntuusers.de/Disco_Dingo/
+
+- dc:title: 'Eoan Ermine'
+  dc:description: 'Ubuntu 19.10'
+  dc:identifier: https://wiki.ubuntuusers.de/Eoan_Ermine/
+
+- dc:title: 'Focal Fossa'
+  dc:description: 'Ubuntu 20.04 LTS'
+  dc:identifier: https://wiki.ubuntuusers.de/Focal_Fossa/
+
+- dc:title: 'Groovy Gorilla'
+  dc:description: 'Ubuntu 20.10'
+  dc:identifier: https://wiki.ubuntuusers.de/Groovy_Gorilla/
+
+- dc:title: 'Hirsute Hippo'
+  dc:description: 'Ubuntu 21.04'
+  dc:identifier: https://wiki.ubuntuusers.de/Hirsute_Hippo/
+
+- dc:title: 'Impish Indri'
+  dc:description: 'Ubuntu 21.10'
+  dc:identifier: https://wiki.ubuntuusers.de/Impish_Indri/
+
+- dc:title: 'Jammy Jellyfish'
+  dc:description: 'Ubuntu 22.04 LTS'
+  dc:identifier: https://wiki.ubuntuusers.de/Jammy_Jellyfish/
+
+- dc:title: 'Kinetic Kudu'
+  dc:description: 'Ubuntu 22.10'
+  dc:identifier: https://wiki.ubuntuusers.de/Kinetic_Kudu/
+
+- dc:title: 'Lunar Lobster'
+  dc:description: 'Ubuntu 23.04'
+  dc:identifier: https://wiki.ubuntuusers.de/Lunar_Lobster/
+
+- dc:title: 'Mantic Minotaur'
+  dc:description: 'Ubuntu 23.10'
+  dc:identifier: https://wiki.ubuntuusers.de/Mantic_Minotaur/
+
+- dc:title: 'Noble Numbat'
+  dc:description: 'Ubuntu 24.04 LTS'
+  dc:identifier: https://wiki.ubuntuusers.de/Noble_Numbat/
+
+- dc:title: 'Oracular Oriole'
+  dc:description: 'Ubuntu 24.10'
+  dc:identifier: https://wiki.ubuntuusers.de/Oracular_Oriole/
+
+- dc:title: 'Plucky Puffin'
+  dc:description: 'Ubuntu 25.04'
+  dc:identifier: https://wiki.ubuntuusers.de/Plucky_Puffin/
+
+- dc:title: 'Questing Quokka'
+  dc:description: 'Ubuntu 25.10'
+  dc:identifier: https://wiki.ubuntuusers.de/Questing_Quokka/
+
+- dc:title: 'Resolute Raccoon'
+  dc:description: 'Ubuntu 26.04 LTS'
+  dc:identifier: https://wiki.ubuntuusers.de/Resolute_Raccoon/
+
+- dc:title: 'Stonking Stingray'
+  dc:description: 'Ubuntu 26.10'
+  dc:identifier: https://wiki.ubuntuusers.de/Stonking_Stingray/
+
+- dc:title: 'Tenacious T-Rex'
+  dc:description: 'Ubuntu 27.04'
+  dc:identifier: https://wiki.ubuntuusers.de/Tenacious_T-Rex/
+
+
+
+...
