@@ -1,0 +1,35 @@
+%YAML 1.2
+# -*- coding: 'UTF-8, tab-width: 2 -*-'
+---
+
+^:  # '^' = Catalog ID is the file basename.
+
+  upstream:
+    # lobid API docs: https://lobid.org/gnd/api
+    method: GET
+    urlTemplate:
+      - 'https://lobid.org/gnd/search'
+      # %Qx = the effective query argument x,
+      #       after sanitization, defaults, limits, etc.
+      - '?q=%Qs'
+      - '&from=%Qo'
+      - '&size=%Qn'
+      - '&sort=preferredName.keyword:asc'
+      - '&format=json:preferredName'
+      # Optionally add more fields:
+      # - ',type'
+      - ',professionOrOccupation'
+      - ',dateOfBirth'
+      - ',placeOfBirth'
+      - ',dateOfDeath'
+      - ',placeOfDeath'
+      - ',periodOfActivity'
+      # - ',gender'
+
+    entryKeysMap:
+      'dc:identifier': 'id'
+      'dc:title': 'label'
+
+
+
+...
