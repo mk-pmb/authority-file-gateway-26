@@ -1,0 +1,20 @@
+%YAML 1.2
+# -*- coding: UTF-8, tab-width: 2 -*-
+---
+
+'': # <-- Empty name = common defaults for this category.
+
+  queryDefaults:
+    n:  20
+
+#  upstreams:
+#    '': # <-- Empty name = common defaults for all upstreams.
+#      timeoutSec: 10
+
+
+
+
+
+
+
+...
