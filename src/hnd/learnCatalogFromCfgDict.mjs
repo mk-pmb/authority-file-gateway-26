@@ -35,6 +35,9 @@ const EX = {
     await learnTopicDict(learnCtx, rtName, catImpl);
     await (catImpl.whenConfigured || doNothing)(learnCtx);
 
+    console.debug('D: Learned', rtName, 'catalogs:', state.knownCatalogs.size,
+      Array.from(state.knownCatalogs.keys()).sort());
+
     // eslint-disable-next-line no-param-reassign
     catImpl.state = Object.bind(null, state);
     return state;

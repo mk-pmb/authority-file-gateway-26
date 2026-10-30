@@ -1,0 +1,13 @@
+%YAML 1.2
+# -*- coding: UTF-8, tab-width: 2 -*-
+---
+
+'': # <-- Empty name = common defaults for this category.
+
+  defaultUpstreamTimeoutSec: 3
+  # ^-- Should be a bit shorter than response_timeout_sec.
+
+
+
+
+...

@@ -1,0 +1,39 @@
+%YAML 1.2
+# -*- coding: 'UTF-8, tab-width: 2 -*-'
+---
+
+^:  # '^' = Catalog ID is the file basename.
+
+  subject:
+    dc:title:     'Gemeinsame Normdatei'
+    as:homepage:  'https://de.wikipedia.org/wiki/Gemeinsame_Normdatei'
+
+
+  apiUrl: 'https://lobid.org/gnd/search'
+  # lobid API docs: https://lobid.org/gnd/api
+
+
+  previewDetailsFields:
+    # - type
+    - professionOrOccupation
+    - dateOfBirth
+    - placeOfBirth
+    - dateOfDeath
+    - placeOfDeath
+    - periodOfActivity
+    # - gender
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+...

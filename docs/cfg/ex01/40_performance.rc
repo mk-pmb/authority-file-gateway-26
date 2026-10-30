@@ -1,0 +1,6 @@
+# -*- coding: utf-8, tab-width: 2 -*-
+
+# If you want to use ProxyCat with slow upstream servers,
+# you may have to increase the overall AFGW response timeout:
+# export afgw_response_timeout_sec=5
+

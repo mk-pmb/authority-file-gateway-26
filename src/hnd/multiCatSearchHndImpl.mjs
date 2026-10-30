@@ -1,8 +1,8 @@
 // -*- coding: utf-8, tab-width: 2 -*-
 
-import getOwn from 'getown';
-
 import httpErrors from '@ubhd-as22/http-server-base/src/httpErrors.mjs';
+
+import commonGetPostApi from './commonGetPostApi.mjs';
 
 
 const {
@@ -10,51 +10,28 @@ const {
 } = httpErrors.throwable;
 
 
-function mergeQueryDefaults(q, d) { return (d ? { ...d, ...q } : q); }
-function sTrim(s) { return String(s || '').trim(); }
-
-
 const EX = async function searchHnd(impl, state, req) {
-  req.confirmCors();
-  let qryMerged = {
-    ...state?.commonMeta?.queryDefaults,
-    ...req.query,
-  };
-  if (req.method === 'POST') {
-    const bodyData = await req.parseRequestBody({ fmt: 'webform' });
-    Object.assign(qryMerged, bodyData);
-  }
-
-  function qryNonEmptyStr(key, descr) {
-    const val = sTrim(getOwn(qryMerged, key));
-    if (val) { return val; }
-    throw badBodyData('Empty ' + descr + ' (field ' + key + ')');
-  }
-
-  const catId = qryNonEmptyStr('c', 'catalog ID');
+  const searchReqCtx = await commonGetPostApi.init(req);
+  const catId = searchReqCtx.qryNonEmptyStr('c', 'catalog ID');
   const catInfo = state.knownCatalogs.get(catId);
   if (!catInfo) { throw badBodyData('Unknown catalog ID'); }
-  qryMerged = mergeQueryDefaults(qryMerged, catInfo.queryDefaults);
-
-  function qryIntPosOr0(key) {
-    const val = +getOwn(qryMerged, key);
-    return ((Number.isInteger(val) && (val >= 1) && val) || 0);
-  }
-
-  const qryParsed = {
-    c: catId,
-    s: qryNonEmptyStr('s', 'Search string'),
-    o: qryIntPosOr0('o'),
-    n: qryIntPosOr0('n'),
-  };
-  const searchReqCtx = {
+  Object.assign(searchReqCtx, {
     catId,
     catInfo,
-    qryIntPosOr0,
-    qryMerged,
-    qryNonEmptyStr,
-    qryParsed,
-    req,
+    logCkp: req.logCkp.bind(req, catId),
+  });
+  searchReqCtx.qry = {
+    ...commonGetPostApi.globalQueryDefaults,
+    ...state?.commonMeta?.queryDefaults,
+    ...catInfo.queryDefaults,
+    ...searchReqCtx.qry,
+  };
+  searchReqCtx.qryParsed = {
+    c: catId,
+    s: searchReqCtx.qryNonEmptyStr('s', 'Search string'),
+    o: searchReqCtx.qryIntPosOr0('o', 'Number of items to omit'),
+    n: searchReqCtx.qryIntPosOr0('n', 'Results list limit'),
+    r: searchReqCtx.qryTrimStr('r', 'Ranking rule name'),
   };
 
   const rspData = await impl(searchReqCtx);

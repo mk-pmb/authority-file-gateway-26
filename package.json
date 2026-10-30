@@ -32,6 +32,7 @@
 
   "dependencies": {
     "@ubhd-as22/http-server-base": "mk-pmb/as22.http-server-base#experimental",
+    "axios": "^1.21.0",
     "getown": "^1.0.2",
     "lodash.mapvalues": "^4.6.0",
     "objpop": "^0.3.6",
