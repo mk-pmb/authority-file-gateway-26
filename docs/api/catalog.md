@@ -31,6 +31,7 @@ Provide search results for the criteria given as query arguments.
   * Server config may override the default value.
 * `o`: Offset: How many results to omit from the top of the list.
   Default: 0. May be ignored if unsupported.
+* `r`: Ranked by. Supported values may differ by catalog type and data source.
 
 
 ### Success response
@@ -45,6 +46,7 @@ Usual metadata fields:
 * `nFound`: How many catalog items were found, i.e. match the criteria.
   In catalogs that support pagination, this number may exceed the amount
   of results reported in this reply.
+  * May be omitted or `null` is the catalog doesn't support it.
 * `nTotalCatalogItems`: How many catalog items have been considered.
 * `nSkipped`: How many results have been omitted from the top of the list.
   If a number, it indicates that the catalog supports pagination.

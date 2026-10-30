@@ -1,0 +1,13 @@
+%YAML 1.2
+# -*- coding: UTF-8, tab-width: 2 -*-
+---
+
+'^': # <-- Empty name = common defaults for this category.
+
+  globalQueryDefaults:
+    n:  20
+
+
+
+
+...

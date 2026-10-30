@@ -9,6 +9,7 @@ const EX = {
 EX.cliConfigDefaults = {
   envcfg_prefix: 'afgw_',
   listen_port: 33480,
+  response_timeout_sec: 5,
 };
 
 export default EX;
